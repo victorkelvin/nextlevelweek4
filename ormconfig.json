@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "host": "host.docker.internal",
+    "username": "postgres",
+    "password": "admin",
+    "database": "nlw_db"
+
+}
