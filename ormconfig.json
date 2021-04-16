@@ -1,8 +1,13 @@
 {
     "type": "postgres",
-    "host": "host.docker.internal",
+    "host": "gcloud-host",
     "username": "postgres",
     "password": "admin",
-    "database": "nlw_db"
-
+    "database": "nlw_db",
+    "entities": ["src/models/**.ts"],
+    "migrationsTableName": "migrations_nlw",
+    "migrations": ["src/database/migrations/**.ts"],
+    "cli": {
+        "migrationsDir": "src/database/migrations"
+    }
 }
